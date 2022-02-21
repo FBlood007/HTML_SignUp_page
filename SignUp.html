@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+
+	#overallBorder{
+    	border: 2px solid;
+    	border-color: transparent;
+    	padding: 15px;
+    	background-image: url("AAA.jpg");
+		background-repeat: no-repeat
+		background-attachment: fixed;
+		background-size: 100% 100%;
+   	 	margin: 30px auto 40px auto;
+   	 	margin-top: 30px;
+   	 	margin-bottom: 40px;
+   	 	margin-right: auto;
+    	margin-left: auto;
+    	width: 400px;
+		font-size: 11px;
+		font-style: normal;
+	}
+	
+	.line2 {
+		font-size: 20px;
+	    font-weight: normal;
+	    padding: 6px 0 15px 0;
+	    padding-top: 6px;
+	    padding-right: 0px;
+	    padding-bottom: 10px;
+	    padding-left: 0px;
+	}
+
+	body {
+	    margin-top: 20px;
+	    font-family: Arial;
+	    color: #51555C;
+	    height: 100%;
+	   
+	}
+	input{
+		padding: inherit;
+		margin-left: 0px;
+	}
+	label{
+		margin-left: 20px;
+		padding-right: 0px; 
+		margin-right: 0px;
+
+	}
+	.Button{
+		font-weight: bold;
+	    margin-top: 10px;
+	    margin-left: 112px;
+	    padding-top: 3px;
+	    padding-right: 2px;
+	    padding-bottom: 3px;
+	    padding-left: 2px;
+	    color: white;
+	    background-color: #589d39;
+	    outline: none;
+	    border: 1px solid black;
+	    
+	}
+	h3{
+		margin-top: 5px;
+		margin-bottom: 3px;
+		font-weight: normal;
+		padding-bottom: 0px;
+		color: #203360;
+	}
+	h1, h2{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: black;
+	}	
+	</style>
+</head>
+<body>
+
+<form  autocomplete="off">
+	<div id="overallBorder">
+		<h1>Sign up</h1>	
+		<h2 class="line2">It's free and anyone can join</h2>
+		
+		<div>
+			<h3><label>First Name:&#160;</label>  &nbsp  &nbsp  &nbsp
+			<input type="text" name="Fname" id="Fname" required>
+			</h3>
+
+			<h3><label>Last Name:</label>&nbsp  &nbsp &nbsp &nbsp
+			<input type="text" name="Lname" required></h3>
+		
+			<h3><label>Your Email:</label>  &nbsp  &nbsp  &nbsp&nbsp 
+			<input type="Email" name="Email" required></h3>
+		
+			<h3><label>New Password:</label>	
+			<input type="Password" name="Password" required></h3>
+		
+			<h3><label for="Gender">I am:  &#160;&#160; </label>&nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp 
+  			<select name="Gender" id="Gender">
+   			<option value="select">Select Sex:</option>
+   			<option value="Female">Female</option>
+    		<option value="Male">Male</option></select></h3>
+		
+			<h3><label>Birthdate :</label>&nbsp  &nbsp  &nbsp  &nbsp&nbsp 
+			<input type="Date" name="date"/></h3>
+
+			<input type="Submit" class="Button" value="Sign up" onclick="alert('Successful !.....')">
+
+   		</div>
+</form>		
+</body>
+</html>
+<!-- npx create-react-app -->
